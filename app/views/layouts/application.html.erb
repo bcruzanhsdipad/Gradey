@@ -8,8 +8,11 @@
 </head>
 <body>
 
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
 <nav>
-Home | About | Contact | Support | Login
+<%= link_to 'Home', home_index_path %> | <%= link_to 'About', home_about_path %> | <%= link_to 'Contact', home_contact_path %> | <%= link_to 'Support', home_support_path %> | <%= link_to 'Login', new_user_session_path %> | <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
 </nav>
 
 <%= yield %>
