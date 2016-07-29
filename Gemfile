@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Simple Forms
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
 # Active Admin
 gem 'activeadmin', github: 'activeadmin'
 # Devise Authentication
