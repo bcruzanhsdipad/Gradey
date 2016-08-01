@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  get 'dashboard/home'
+	
 
-  get 'dashboard/students'
-
+  resources :students
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
