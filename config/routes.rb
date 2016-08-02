@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   get 'home/support'
 
-  get 'students/dashboard'
+  get 'dashboard/index'
 
  # authenticated :user do
  # root 'dashboard#index', as: "authenticated_root"
