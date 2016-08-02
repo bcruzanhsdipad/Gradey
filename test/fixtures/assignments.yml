@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  score: 1
+  total: 1
+  date_due: 2016-08-02
+  date_received: 2016-08-02
+  file: 
+  details: MyText
+  student_id: 1
+  user_id: 1
+
+two:
+  title: MyString
+  score: 1
+  total: 1
+  date_due: 2016-08-02
+  date_received: 2016-08-02
+  file: 
+  details: MyText
+  student_id: 1
+  user_id: 1

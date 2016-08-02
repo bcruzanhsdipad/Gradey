@@ -1,11 +1,17 @@
 class StudentsController < InheritedResources::Base
-before_filter :authenticate_user!, except: [:index, :show]
+before_filter :authenticate_user!, except: [:show]
   
   def index
 		@students = Student.where(user_id: current_user)
 	end
 
 	def show
+		@student = Student.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @student }
+    end
 	end
 
 	def edit
@@ -20,7 +26,8 @@ before_filter :authenticate_user!, except: [:index, :show]
 		if @student.save
 			redirect_to :action => :index
 		end
-	end	
+	end
+
 
   private
 
