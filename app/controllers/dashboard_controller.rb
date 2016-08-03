@@ -13,13 +13,6 @@ class DashboardController < ApplicationController
 
 
 
-
-
-
-
-
-
-
 private
 
     def student_params
