@@ -1,10 +1,12 @@
 class DashboardController < ApplicationController
-
+  before_action :find_assignment, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!
 	def index
-		@assignment = Assignment.all
+		@assignments = Assignment.where(user_id: current_user)
 	end
 
-
+  def show
+  end
 
 
 

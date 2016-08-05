@@ -1,6 +1,6 @@
 class AddIndexToAssignment < ActiveRecord::Migration
   def change
-    add_column :assignments, :student_id, :string
+    add_column :assignments, :student_id, :integer
     add_index :assignments, :student_id
   end
 end
