@@ -1,10 +1,13 @@
 class DashboardController < ApplicationController
-
-	def index
-		@assignment = Assignment.all
+  before_filter :authenticate_user!
+  def index
+		@assignments = Assignment.all
 	end
 
-
+  def show
+    @student = Student.find(params[:id])
+    @assignments = Assignment.find(params[:id, :title])
+  end
 
 
 
