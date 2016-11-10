@@ -1,8 +1,7 @@
 class DashboardController < ApplicationController
-<<<<<<< HEAD
   before_filter :authenticate_user!
   def index
-		@assignments = Assignment.all
+		@assignments = Assignment.where(user_id: current_user)
 	end
 
   def show
@@ -28,5 +27,3 @@ private
     def assignment_params
       params.require(:assignment).permit(:title, :score, :total, :date_due, :date_receieved, :file, :details)
     end
-
-end

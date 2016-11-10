@@ -18,8 +18,8 @@
         <td><%= assignment.title %></td>
         <td><%= assignment.score %></td>
         <td><%= assignment.total %></td>
-        <td><%= assignment.date_due %></td>
-        <td><%= assignment.date_received %></td>
+        <td><%= assignment.date_due.to_formatted_s (:long_ordinal) %></td>
+        <td><%= assignment.date_received.to_formatted_s (:long_ordinal) %></td>
         <td><%= assignment.details %></td>
 
       </tr>
