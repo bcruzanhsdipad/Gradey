@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails Gradey: test" uuid="055fecfb-8b78-4cc6-9250-e70f537b8bdb" />
+    <data-source name="Rails Gradey: development" uuid="9dcdacc0-ba6a-46e0-8b3d-bffccbb19a64">
+      <auth-required>false</auth-required>
+    </data-source>
+  </component>
+</project>
