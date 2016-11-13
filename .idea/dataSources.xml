@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="DataSourceManagerImpl" format="xml" hash="3636389556">
     <data-source source="LOCAL" name="Rails Gradey: test" uuid="055fecfb-8b78-4cc6-9250-e70f537b8bdb">
       <driver-ref>sqlite.xerial</driver-ref>
@@ -18,6 +19,10 @@
       </libraries>
     </data-source>
     <data-source source="LOCAL" name="Rails Gradey: development" uuid="9dcdacc0-ba6a-46e0-8b3d-bffccbb19a64">
+=======
+  <component name="DataSourceManagerImpl" format="xml" hash="954262988">
+    <data-source source="LOCAL" name="Rails Gradey: development" uuid="9aa9f46e-a43b-4c37-8764-403fc6beebb0">
+>>>>>>> 4b656747ba0bac4d8979234f5243cdbef5262bde
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>

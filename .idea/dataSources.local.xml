@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
+<<<<<<< HEAD
     <data-source name="Rails Gradey: test" uuid="055fecfb-8b78-4cc6-9250-e70f537b8bdb" />
     <data-source name="Rails Gradey: development" uuid="9dcdacc0-ba6a-46e0-8b3d-bffccbb19a64">
+=======
+    <data-source name="Rails Gradey: development" uuid="9aa9f46e-a43b-4c37-8764-403fc6beebb0">
+>>>>>>> 4b656747ba0bac4d8979234f5243cdbef5262bde
       <auth-required>false</auth-required>
     </data-source>
   </component>

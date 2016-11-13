@@ -1,29 +1,5 @@
 <h1>Gradebook</h1>
 
-<table border="1px">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Score</th>
-      <th>Total</th>
-      <th>Due Date</th>
-      <th>Date Received</th>
-      <th>Details</th>
-    </tr>
-  </thead>
 
-  <tbody>
-  <% @assignments.each do |assignment| %>
-  <tr>
-    <td><%= assignment.title %></td>
-    <td><%= assignment.score %></td>
-    <td><%= assignment.total %></td>
-    <td><%= assignment.date_due %></td>
-    <td><%= assignment.date_received %></td>
-    <td><%= assignment.details %></td>
-
-  </tr>
-      <%end%>
-  </tbody>
-</table>
+<%= render 'form' %>
 

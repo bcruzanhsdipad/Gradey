@@ -10,11 +10,12 @@ before_filter :authenticate_user!, except: [:show]
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @student }
+      format.json  { render :json => @student }
     end
 	end
 
 	def edit
+		@student = Student.find(params[:id])
 	end
 
 	def new

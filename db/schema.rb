@@ -54,13 +54,14 @@ ActiveRecord::Schema.define(version: 20160805212908) do
     t.date     "date_received"
     t.binary   "file"
     t.text     "details"
+    t.integer  "student_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.integer  "user_id"
-    t.integer  "student_id"
   end
 
   add_index "assignments", ["student_id"], name: "index_assignments_on_student_id"
+  add_index "assignments", ["user_id"], name: "index_assignments_on_user_id"
 
   create_table "students", force: :cascade do |t|
     t.string   "first_name"

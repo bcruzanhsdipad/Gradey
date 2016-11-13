@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+# Rails Console Fix
+gem 'rb-readline'
+# Test unit for Rails Console
+gem 'test-unit'
 # Simple Forms
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 # Active Admin
