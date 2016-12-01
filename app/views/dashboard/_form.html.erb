@@ -1,27 +1,20 @@
 
 
-<table border="1px">
+<table>
   <thead>
   <tr>
-    <th>Title</th>
-    <th>Score</th>
-    <th>Total</th>
-    <th>Due Date</th>
-    <th>Date Received</th>
-    <th>Details</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
   </tr>
   </thead>
 
   <tbody>
-  <% @assignments.each do |assignment| %>
+  <% @student.each do |student| %>
       <tr>
-        <td><%= assignment.title %></td>
-        <td><%= assignment.score %></td>
-        <td><%= assignment.total %></td>
-        <td><%= assignment.date_due.to_formatted_s (:long_ordinal) %></td>
-        <td><%= assignment.date_received.to_formatted_s (:long_ordinal) %></td>
-        <td><%= assignment.details %></td>
-
+        <td><%= student.first_name %></td>
+        <td><%= student.last_name %></td>
+        <td><%= student.email %></td>
       </tr>
   <%end%>
   </tbody>

@@ -7,6 +7,7 @@ before_filter :authenticate_user!, except: [:show]
 
 	def show
 		@student = Student.find(params[:id])
+		@assignment = Assignment.where(student_id: current_user)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -34,6 +35,11 @@ before_filter :authenticate_user!, except: [:show]
 
     def student_params
       params.require(:student).permit(:first_name, :last_name, :email)
-    end
+		end
+
+		def assignment_params
+			params.require(:assignment).permit(:title, :score, :total, :date_due, :date_receieved, :file, :details)
+end
+
 end
 
